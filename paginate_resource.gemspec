@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = PaginateResource::VERSION
   spec.authors       = ["shirzad"]
   spec.email         = ["shirzad.kamawall@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{paginate dataset by starting at a given resource}
+  spec.description   = %q{Given a specific resource start paginating to next or previous resource while preserving order and arel conditions. }
   spec.homepage      = ""
   spec.license       = "MIT"
 
