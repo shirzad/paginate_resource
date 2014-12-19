@@ -17,7 +17,7 @@ Tested with Ruby 2.1.5 and Rails 4.1.8
 
 Add this line to your application's Gemfile:
 
-    gem 'paginate_resource'
+    gem 'paginate_resource', :git => "git@github.com:shirzad/paginate_resource.git"
 
 And then execute:
 
@@ -64,6 +64,14 @@ By overriding the collection method you can provide additional arel conditions o
     
 Now by viewing a specific user the next_resource method will return the next confirmed user
 ordered by name asc. The default order is by primary key.
+
+In view..
+
+    link_to "Next", user_path(next_resource)
+
+or
+
+    link_to "Previous", user_path(prev_resource)
 
 ## Contributing
 
