@@ -4,10 +4,10 @@ paginate_resource is a simple ruby gem which allows a Rails application to easil
 provide pagination functionality beginning with a given resource. Normally you would use gems
 like will_paginate or kaminari to paginate your collection on a listing page.
 Once the user selects a resource from the list and enters the view for the selected resource you
-need a way to jump to next the resource starting from that very resource.
+need a way to jump to the next resource starting from that very resource.
 
 paginate_resource provides two helper methods to jump to the next resource
-or the previous resource in the list taking care of the order any arel conditions.
+or the previous resource in the list taking care of the order and any arel conditions.
 
 ## Compatibility
 
@@ -63,7 +63,7 @@ By overriding the collection method you can provide additional arel conditions o
     end
     
 Now by viewing a specific user the next_resource method will return the next confirmed user
-ordered by name asc. The default order is by primary key._
+ordered by name asc. The default order is by primary key.
 
 ## Contributing
 
